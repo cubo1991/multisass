@@ -1,0 +1,564 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: linear-gradient(to right, #0086a8, #030303);
+  padding: 1% 5% 1% 5%; }
+
+a {
+  color: chocolate; }
+
+header {
+  grid-area: header;
+  height: auto;
+  overflow: visible;
+  top: 0px;
+  margin-bottom: 40px;
+  background-image: linear-gradient(to right, #0086a800, rgba(3, 3, 3, 0));
+  position: relative; }
+
+.fondo {
+  margin-left: 100px;
+  margin-right: 100px;
+  position: relative;
+  background-size: 90%;
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-color: #ffa34d;
+  overflow: visible; }
+
+#logo {
+  background-image: linear-gradient(to right, #0086a8, rgba(3, 3, 3, 0)); }
+
+h1 {
+  /* acá van todos los estilos */
+  /*propiedad: valor;*/
+  color: #ffffff;
+  font-size: 50px;
+  font-family: "Mukta";
+  height: auto; }
+
+.pie {
+  grid-area: Pie;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px; }
+  .pie .pie__a {
+    border: yellowgreen; }
+  .pie .pie__rrss--item {
+    height: 50px;
+    width: 50px; }
+
+.noticiaDestacada {
+  background-color: white;
+  height: 300px;
+  grid-area: Destacada;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden; }
+  .noticiaDestacada .noticiaDestacada__p {
+    color: #0086a8;
+    display: flex;
+    font-size: medium; }
+
+h2 {
+  /* acá van todos los estilos */
+  /*propiedad: valor;*/
+  color: #0086a8;
+  font-size: 40px;
+  font-family: "Mukta"; }
+
+.h2Podcast {
+  color: #000000;
+  font-size: 40px;
+  font-family: "Mukta";
+  font-weight: bolder; }
+
+p {
+  color: #701919;
+  font-size: 20px;
+  text-align: justify;
+  font-family: "Mukta";
+  padding: 20px; }
+
+.fondoSecciones {
+  background-color: white;
+  padding: 10px; }
+
+.fondoTexto {
+  background-color: white;
+  padding: 10px; }
+
+.imagenDestacada {
+  display: flex;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+  overflow: auto;
+  flex-flow: wrap;
+  max-width: 35%;
+  max-height: 40%;
+  height: auto;
+  width: auto; }
+
+.imagenes {
+  display: flex;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+  overflow: auto;
+  flex-flow: wrap;
+  max-width: 60%;
+  max-height: 70%;
+  height: auto;
+  width: auto; }
+
+.imagenes:hover {
+  transform: scale(1.05, 1.1);
+  transition: 1s; }
+
+.imagenesNoticias {
+  display: flex;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+  overflow: auto;
+  flex-flow: wrap;
+  max-width: 100%;
+  max-height: 75%;
+  height: 50%;
+  width: 50%; }
+
+.video {
+  position: relative;
+  z-index: -1; }
+
+#lema {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  background-image: linear-gradient(to right, #0086a8, #030303);
+  height: 20%; }
+
+.italica {
+  font-style: italic; }
+
+.negrita {
+  font-weight: bolder; }
+
+.noticia1 {
+  background-color: white;
+  border-radius: 10px;
+  grid-area: Noticia1;
+  height: 300px;
+  overflow: hidden; }
+  .noticia1 .noticia1__p {
+    display: flex;
+    overflow: hidden;
+    color: #0086a8;
+    font-size: medium; }
+
+.noticia2 {
+  background-color: white;
+  height: 300px;
+  grid-area: Noticia2;
+  border-radius: 10px;
+  overflow: hidden; }
+  .noticia2 .noticia2__p {
+    display: flex;
+    overflow: hidden;
+    color: #0086a8;
+    font-size: medium; }
+
+.noticiaMenor {
+  background-color: white;
+  border-radius: 10px;
+  grid-area: Noticia3; }
+
+.listaDeReproducción {
+  grid-area: Lista;
+  border: solid black 10px; }
+
+.podcast {
+  grid-area: Podcast;
+  border: solid; }
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 800px;
+  width: 800px;
+  margin: auto; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
+  align-content: space-between;
+  text-align: center;
+  border: none;
+  grid-area: formulario; }
+
+.itemFormulario {
+  border: solid;
+  height: 20%;
+  padding-top: 75px;
+  text-align: center; }
+
+fieldset {
+  font-weight: bolder; }
+
+.contactoGrid {
+  display: grid;
+  grid-template-areas: "header header header" "formulario formulario formulario" "Footer Footer Footer";
+  grid-template-columns: 25% 1fr 1fr;
+  grid-template-rows: 1fr 1fr 10%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: 150vh; }
+
+.homeGrid {
+  display: grid;
+  grid-template-areas: "Lista Lista Lista" "Podcast Podcast Podcast" "Destacada Destacada Destacada" "Noticia1 Noticia1 Noticia1" "Noticia2 Noticia2 Noticia2" "Noticia3 Noticia3 Noticia3" "Pie Pie Pie";
+  grid-template-columns: 25% 1fr 1fr;
+  grid-template-rows: 1fr 3fr 2fr 1fr 1fr 1fr 10%;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: 100vh; }
+
+/* Esto es el Menú */
+.menuGrid {
+  grid-area: Menu; }
+
+.navMenu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  background-color: #ada1a1;
+  justify-content: space-between;
+  padding: 1%;
+  border: solid;
+  align-items: center;
+  border-radius: 0px;
+  margin-bottom: 1%; }
+
+.navMenu li {
+  display: flex;
+  border: solid;
+  padding: 12px;
+  width: 25px;
+  margin-left: auto;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: inherit;
+  font-size: 75%;
+  justify-content: center;
+  position: relative; }
+
+.navMenu li ul {
+  position: absolute;
+  display: block;
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  top: 23%; }
+
+.navMenu li ul li {
+  display: block;
+  font-size: 10px;
+  border: solid;
+  left: -5px;
+  top: 30px;
+  padding: 6% 65% 23% 10%;
+  width: 50%;
+  height: 1%;
+  background-color: grey;
+  position: relative; }
+
+.navMenu li ul li p {
+  color: white; }
+
+.subMenu {
+  position: absolute;
+  display: block;
+  font-size: 50px;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  padding: auto;
+  top: 23%; }
+
+.subMenu li {
+  display: flex;
+  border: solid;
+  padding: 5px;
+  width: 200px;
+  margin-left: auto;
+  margin-bottom: 10px;
+  margin-right: auto;
+  border-radius: inherit;
+  font-size: 150%;
+  justify-content: center; }
+
+/* Acá termina el Menú*/
+.centrado {
+  margin: auto;
+  margin-top: 20px; }
+
+/* Estilos del documento Reseñas.html*/
+/* Estilos del documento Contacto */
+form {
+  color: white;
+  font-family: "Mukta"; }
+
+/* Estilos del documento Podcast.html*/
+/* Estilos para escritorio */
+@media (min-width: 1200px) {
+  header {
+    position: relative; }
+  .noticiaDestacada {
+    background-color: white;
+    height: 500px;
+    grid-area: Destacada;
+    align-items: center;
+    border-radius: 10px; }
+    .noticiaDestacada p {
+      display: flex;
+      overflow: hidden; }
+  .noticiaDestacada .noticiaDestacada__p {
+    color: #0086a8;
+    display: flex;
+    font-size: large; }
+  .noticia1 .noticia1__p {
+    display: flex;
+    overflow: hidden;
+    color: #0086a8;
+    font-size: large; }
+  .noticia2 .noticia2__p {
+    display: flex;
+    overflow: hidden;
+    color: #0086a8;
+    font-size: large; }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: xx-large; }
+  .navbar__collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+    align-items: center;
+    position: absolute;
+    left: 30%; }
+  .homeGrid {
+    display: grid;
+    grid-template-areas: "Lista Podcast Podcast" "Lista Destacada Destacada" "Lista Noticia1 Noticia2" "Lista Noticia3 Noticia3" "Pie Pie Pie";
+    grid-template-columns: 25% 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 1fr 13vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 100vh; }
+  /* Esto es el Menú */
+  .menuGrid {
+    grid-area: Menu; }
+  .navMenu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: #ada1a1;
+    justify-content: space-between;
+    padding: 1%;
+    border: solid;
+    align-items: center;
+    border-radius: 0px; }
+  .navMenu li {
+    display: flex;
+    border: solid;
+    padding: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-right: auto;
+    border-radius: inherit;
+    font-size: 150%;
+    justify-content: center;
+    position: relative; }
+  .navMenu li:hover {
+    background-color: black; }
+  .navMenu li ul:hover {
+    height: 260px;
+    width: 150px; }
+  .navMenu li ul {
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    top: 23%;
+    transition: 1s; }
+  .navMenu li ul li {
+    display: block;
+    font-size: 20px;
+    border: solid;
+    left: -5px;
+    top: 23px;
+    padding: 6% 10% 16% 10%;
+    width: 50%;
+    height: 1%;
+    background-color: grey;
+    position: relative; }
+  .navMenu li ul li p {
+    color: white; }
+  .subMenu {
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    top: 23%; }
+  .subMenu li {
+    display: flex;
+    border: solid;
+    padding: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-right: auto;
+    border-radius: inherit;
+    font-size: 150%;
+    justify-content: center; }
+  /* Acá termina el Menú*/
+  #logo {
+    background-color: black; }
+  #lema {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: #0086a8;
+    height: 10%; } }
+
+/* Estilo para Tablet*/
+@media (min-width: 600px) {
+  .homeGrid {
+    display: grid;
+    grid-template-areas: "Lista Podcast Podcast" "Lista Destacada Destacada" "Lista Noticia1 Noticia2" "Lista Noticia3 Noticia3" "Pie Pie Pie";
+    grid-template-columns: 25% 1fr 1fr;
+    grid-template-rows: 1fr 3fr 2fr 1fr 14vh;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 100vh; }
+  .noticiaDestacada {
+    background-color: white;
+    height: 350px;
+    grid-area: Destacada;
+    align-items: center;
+    border-radius: 10px; }
+  .noticia1__p {
+    display: flex;
+    overflow: hidden;
+    color: #0086a8;
+    font-size: medium; }
+  .noticia2__p {
+    display: flex;
+    overflow: hidden;
+    color: #0086a8;
+    font-size: medium; }
+  /* Esto es el Menú */
+  .menuGrid {
+    grid-area: Menu; }
+  .navMenu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: #ada1a1;
+    justify-content: space-between;
+    padding: 1%;
+    border: solid;
+    align-items: center;
+    border-radius: 0px; }
+  .navMenu li {
+    display: flex;
+    border: solid;
+    padding: 5px;
+    width: 100px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: inherit;
+    font-size: 150%;
+    justify-content: center;
+    position: relative; }
+  .navMenu li ul {
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    top: 23%; }
+  .navMenu li ul li {
+    display: block;
+    font-size: 20px;
+    border: solid;
+    left: -5px;
+    top: 30px;
+    padding: 6% 52% 23% 10%;
+    width: 50%;
+    height: 1%;
+    background-color: grey;
+    position: relative; }
+  .navMenu li ul li p {
+    color: white; }
+  .subMenu {
+    position: absolute;
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    top: 23%; }
+  .subMenu li {
+    display: flex;
+    border: solid;
+    padding: 5px;
+    width: 200px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    margin-right: auto;
+    border-radius: inherit;
+    font-size: 150%;
+    justify-content: center; }
+  /* Acá termina el Menú*/
+  #lema {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    background-color: #0086a8;
+    height: 20%; }
+  #logo {
+    background-color: black;
+    height: 80px; }
+  header {
+    grid-area: header;
+    height: auto;
+    overflow: visible;
+    top: 0px;
+    margin-bottom: 10px; } }
